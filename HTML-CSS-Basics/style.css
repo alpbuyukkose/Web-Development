@@ -1,0 +1,106 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    font-family: Poppins, 'Segoe UI', sans-serif;
+    text-align: center;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 25px;
+    border-bottom: 2px solid #e3e3e3;
+}
+
+nav a{
+    text-decoration: none;
+    color: #929292;
+    margin: 10px;
+}
+
+nav a:hover{
+    color: black;
+}
+
+nav a.active{
+    color: black;
+}
+
+header{
+    padding-top: calc(52px + 1rem);
+}
+
+h1{
+    margin-top: 100px;
+    font-size: 3.75rem;
+    font-weight: bold;
+    line-height: 1.2em;
+}
+
+h1 + p{
+    width: 800px;
+    max-width: 90%;
+    margin: 35px auto;
+}
+
+#cta-button{
+    text-decoration: none;
+    text-transform: uppercase;
+    background: linear-gradient(to right, #D786FF, #722CFF);
+    display: inline-block;
+    padding: 1em 3em;
+    border-radius: 1000px;
+    font-weight: 600;
+    transition: 150ms;
+}
+
+#cta-button:hover{
+    transform: scale(1.1);
+}
+
+.video-player{
+    margin-top: 30px;
+    width: min(1100px, 100%);
+    aspect-ratio: 16/9;
+    border-radius: 15px;
+}
+
+.products-contanier{
+    margin-top: 30px;
+}
+
+.item{
+    width: 300px;
+    height: 300px;
+
+    border-radius: 25px;
+
+    display: inline-block;
+    margin: 0px 20px 20px 20px;
+    align-content: center;
+
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.item > h2{
+    margin-bottom: 10px;
+}
+
+.item:first-child{
+    border: 1px solid;
+}
+
+.item:nth-child(2){
+    background-color: #7932ff;
+    color: white;
+}
+
+.item:last-child{
+    background-color: black;
+    color: white;
+}
