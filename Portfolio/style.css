@@ -28,6 +28,8 @@ nav{
     background-color: var(--secondary-color);
     position: sticky;
     top: 0px;
+
+    z-index: 10;
 }
 
 nav#inner-nav{
@@ -40,6 +42,8 @@ nav#inner-nav{
 
     position: sticky;
     top: 0px;
+
+    z-index: 11;
 }
 
 nav#inner-nav h1{
@@ -120,6 +124,7 @@ header p{
 #projects .items h3{
     color: var(--accent-color);
     font-weight: 600;
+    padding-left: 10px;
 }
 
 #projects .items p{
@@ -131,20 +136,60 @@ header p{
     color: var(--secondary-text-color);
 }
 
-#projects img{
+#projects video{
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
     max-width: 100%;
 }
 
-#projects .items h3{
+.video-brightness video{
+    transition: filter 0.4s ease-in-out;
+    filter: brightness(1);
+    filter: saturate(1);
+}
+
+.video-brightness:hover video{
+    filter: brightness(1.2); 
+    filter: saturate(1.6);
+}
+
+.video-brightness span.text{
+    transition: filter 0.4s ease-in-out;
+    filter: brightness(1); 
+}
+
+.video-brightness:hover span.text{
+    filter: brightness(1.5); 
+}
+
+#projects .items span.text{
+    color: var(--accent-color);
     padding-left: 10px;
     font-weight: 500;
+    font-size: 1.25rem;
+}
+
+#projects a{
+    text-decoration: none;
 }
 
 @media (max-width: 768px){
     #projects .container{
         grid-template-columns: 1fr;
+    }
+
+    header img{
+        display: none;
+    }
+
+    #skills #skill-flex{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #skills #skill-flex .skill-box{
+        width: 120px;
+        text-align: center;
     }
 }
 
